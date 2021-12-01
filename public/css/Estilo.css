@@ -358,7 +358,6 @@
 } 
 .modal h2{
     margin-bottom: 20px;
-    /* font-family: 'Titillium Web', sans-serif; */
     font-family: 'Asap', sans-serif;
     color: #212121;
     font-size: 30px;
@@ -376,6 +375,12 @@
     }
     .containerDetails p{
         font-size: 1.25em;  
+    } 
+    .modal{
+    width: 90%;
+    }
+    .modal video{
+        width: 100%;
     } 
  }
  @media screen and (max-width:860px){
@@ -397,6 +402,12 @@
     .card p{
         letter-spacing: 1px;
     }
+    .modal{
+        width: 90%;
+    }
+    .modal video{
+        width: 100%;
+    } 
  }
 @media screen and (max-width:800px) and (min-width:690px) {
     .card{
@@ -461,6 +472,13 @@
         width: 135px;
         height: 135px;
      }
+    .modal{
+        width: 88%;
+        padding: 15px 20px;
+    }
+    .modal p{
+        font-size: 19px;
+    }
 }
 @media screen and (max-width:510px){
     #Hero h2{
@@ -488,13 +506,44 @@
     .card{
         width: 70%;
     }
+    .modal{
+        width: 85%;
+    }
+    .modal p{
+        font-size: 18px;
+    }
 }
 @media screen and (max-width:390px){
+    .containerDetails{
+        left: 15px;
+        bottom: 15px;
+    }
+    .containerDetails h2{
+        font-size: 1.50em;   
+        margin-bottom: 0; 
+    }
+    .containerDetails p{
+        font-size: 1em;  
+    } 
     .logoSkill{
         margin: 15px 20px;
         width: 120px;
         height: 120px;
      }
+    .modal{
+        padding: 10px 5px;
+        width: 95%;
+    }
+    .modal h2{
+        font-size: 25px;
+    }
+    .modal p{
+        font-size: 17px;
+        padding: 10px;
+    }
+    #btnBoxModal{
+        margin: 15px 15px 0px 0px;
+    }
 }
 
     
