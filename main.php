@@ -155,7 +155,7 @@
         <p>Linkedin/Guido-Cabrera</p>
       </div>
 
-      <div class="card">
+      <div class="card" id="cardEmail">
         <i class="card-icon icon-email"></i>
         <p>guido.n_1997@outlook.com</p>
       </div>
