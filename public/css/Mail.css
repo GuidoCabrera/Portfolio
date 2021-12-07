@@ -20,6 +20,17 @@ body{
     font-size: 28px;
     font-weight: 400;
 }
+#msjResult{
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    font-size: 19px;
+}
+.success{
+   color: #289228;
+}
+.failure{
+   color: #922f28;
+}
 #containerMail form .inputGroup p{
     font-family: 'PT Sans', sans-serif;
     font-size: 20px;

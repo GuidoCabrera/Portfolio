@@ -23,6 +23,19 @@
 
   <h2 id="title">Enviar correo a Guido Cabrera</h2>
 
+  <?php
+  if(isset($_GET["result"])){
+    if($_GET["result"]=="success"){
+      $msj = "El mail se ha enviado satisfactoriamente, muchas gracias por su interes.";
+      ?><p id="msjResult" class="success"><?php echo $msj; ?></p> <?php
+    }
+    else if($_GET["result"]=="failure"){
+      $msj = "Ha surgido un error al enviar el mail, vuelva a intentarlo nuevamente mas tarde.";
+      ?> <p id="msjResult" class="failure"><?php echo $msj; ?></p> <?php 
+    }
+  }
+  ?>
+  
    <form action="sendMail" method="POST" id="formSendMail">
 
       <div id="formGroup">
@@ -47,5 +60,6 @@
    </form>
  </div>
     
+ <script src="public/js/mail.js"></script>
 </body>
 </html>
