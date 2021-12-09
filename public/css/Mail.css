@@ -70,3 +70,24 @@ body{
     background: #aeb1d4;
     font-size: 19px;
 }
+@media screen and (max-width:990px) {
+    #emailTxtArea{
+        width: 90%;
+    }
+}
+@media screen and (max-width:475px) {
+    #containerMail{
+        width: 80%;
+    }
+    #emailTxtArea{
+        width: 90%;
+    }
+}
+@media screen and (max-width:340px) {
+    #containerMail{
+        width: 82%;
+    }
+    #containerMail form .inputGroup input{
+        width: 210px; 
+    }
+}

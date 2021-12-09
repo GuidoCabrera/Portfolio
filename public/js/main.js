@@ -7,7 +7,7 @@ linkeDin.addEventListener("click",function(){
 });
 
 email.addEventListener("click",function(){
-   window.open("http://192.168.72.109/PHP/Portfolio/mail", "_blank");
+   window.open("http://192.168.2.102/PHP/Portfolio/mail", "_blank");
 });
 
 git.addEventListener("click",function(){

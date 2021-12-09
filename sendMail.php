@@ -37,6 +37,8 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
+if(isset($_POST['email'])&&isset($_POST["subject"])&&isset($_POST["message"])){
+
 // Inicio
 $mail = new PHPMailer(true);
 
@@ -68,9 +70,11 @@ try {
     $mail->isHTML(true);
     $mail->send();
     $result = "success";
-    header("location: http://192.168.72.109/PHP/Portfolio/mail?result=".$result);
-} catch (Exception $e) {
+    header("location: http://192.168.2.102/PHP/Portfolio/mail?result=".$result);
+} 
+catch (Exception $e) {
     $result = "failure";
-    header("location: http://192.168.72.109/PHP/Portfolio/mail?result=".$result);
+    header("location: http://192.168.2.102/PHP/Portfolio/mail?result=".$result);
+}
 }
 ?>
